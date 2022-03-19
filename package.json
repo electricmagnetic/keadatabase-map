@@ -22,7 +22,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "s3-deploy './build/**' --cwd './build/' --region ap-southeast-2 --delete-removed --distId E2WQ0CK2D7D4CW --invalidate '/index.html' --bucket map.keadatabase.nz",
+    "deploy": "firebase deploy",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -47,8 +47,7 @@
   "devDependencies": {
     "husky": "^2.7.0",
     "prettier": "^1.19.1",
-    "pretty-quick": "^1.11.1",
-    "s3-deploy": "^1.4.0"
+    "pretty-quick": "^1.11.1"
   },
   "husky": {
     "hooks": {
