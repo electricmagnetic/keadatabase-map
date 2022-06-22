@@ -57,9 +57,10 @@ class Map extends Component {
       <>
         {!embed && <Header />}
         <div className={classes}>
-          <LeafletMap className="map" minZoom={6} maxZoom={14} bounds={this.state.bounds}>
+          <LeafletMap className="map" minZoom={6} maxZoom={17} bounds={this.state.bounds}>
             <TileLayer
               attribution="Mapbox"
+              maxZoom={14}
               url={`https://api.mapbox.com/styles/v1/mapbox/outdoors-v9/tiles/256/{z}/{x}/{y}?access_token=${process.env.REACT_APP_MAPBOX_API_KEY}`}
             />
             <TileLayer
