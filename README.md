@@ -1,3 +1,5 @@
+> Project archived, see new version at <https://github.com/electricmagnetic/keadatabase/tree/main/map>
+
 # Kea Database Map
 
 Uses React + Leaflet + Mapbox to consume a GeoJSON feed from the database and present it in different ways.
